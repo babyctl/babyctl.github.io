@@ -13,26 +13,28 @@
       
       
       
+        <link rel="prev" href="../workflows/">
       
-        <link rel="next" href="getting-started/">
+      
+        <link rel="next" href="../architecture/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Overview - babyctl Docs</title>
+        <title>Kubectl Integration - babyctl Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#babyctl" class="md-skip">
+        <a href="#testing-babyctl-api-server-with-kubectl" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="babyctl Docs" class="md-header__button md-logo" aria-label="babyctl Docs" data-md-component="logo">
+    <a href=".." title="babyctl Docs" class="md-header__button md-logo" aria-label="babyctl Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Kubectl Integration
             
           </span>
         </div>
@@ -205,11 +207,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -228,7 +228,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../getting-started/" class="md-tabs__link">
         
   
   
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="cli-reference/" class="md-tabs__link">
+        <a href="../cli-reference/" class="md-tabs__link">
           
   
   
@@ -267,11 +267,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="kubectl-integration/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -291,7 +293,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="architecture/" class="md-tabs__link">
+      <a href="../architecture/" class="md-tabs__link">
         
   
   
@@ -312,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="development/" class="md-tabs__link">
+        <a href="../development/" class="md-tabs__link">
           
   
   
@@ -350,7 +352,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="babyctl Docs" class="md-nav__button md-logo" aria-label="babyctl Docs" data-md-component="logo">
+    <a href=".." title="babyctl Docs" class="md-nav__button md-logo" aria-label="babyctl Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -377,37 +379,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -423,92 +398,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-babyctl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why babyctl?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key use cases
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Supported commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-automation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Release automation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learn-more" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Learn more
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -520,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -605,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli-reference/" class="md-nav__link">
+      <a href="../cli-reference/" class="md-nav__link">
         
   
   
@@ -633,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="workflows/" class="md-nav__link">
+      <a href="../workflows/" class="md-nav__link">
         
   
   
@@ -665,8 +554,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -676,19 +567,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -706,7 +600,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -721,10 +615,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="kubectl-integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubectl Integration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -740,6 +661,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-with-kubectl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using with kubectl
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using with kubectl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-api-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test API Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-with-curl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing with curl
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-custom-api-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Custom API Definitions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-babyctl-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using babyctl Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-kubeconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with kubeconfig
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -759,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -844,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/" class="md-nav__link">
+      <a href="../development/" class="md-nav__link">
         
   
   
@@ -872,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contributing/" class="md-nav__link">
+      <a href="../contributing/" class="md-nav__link">
         
   
   
@@ -917,7 +974,7 @@
 
 
   
-    <a href="https://github.com/m0un10/babyctl/edit/main/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/m0un10/babyctl/edit/main/kubectl-integration.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -925,117 +982,126 @@
   
 
 
-<h1 id="babyctl">babyctl<a class="headerlink" href="#babyctl" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>If Terraform and kubectl had a baby, it would feel a lot like babyctl.</p>
-</blockquote>
-<div class="admonition warning">
-<p class="admonition-title">Active development</p>
-<p>babyctl is rapidly evolving. Expect dragons, gremlins, and fast-moving feature work while the core experience stabilises.</p>
-</div>
-<p>babyctl lets you interact with any infrastructure that Terraform can describe while keeping the ergonomics of kubectl. The goal is
-to provide <code>kubectl</code>-style workflows—<code>get</code>, <code>apply</code>, <code>edit</code>, <code>diff</code>, and more—without depending on a running Kubernetes cluster.</p>
-<h2 id="why-babyctl">Why babyctl?<a class="headerlink" href="#why-babyctl" title="Permanent link">&para;</a></h2>
+<h1 id="testing-babyctl-api-server-with-kubectl">Testing babyctl API Server with kubectl<a class="headerlink" href="#testing-babyctl-api-server-with-kubectl" title="Permanent link">&para;</a></h1>
+<p>This guide shows how to use the babyctl API server with kubectl.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Zero-import applies</strong> – point <code>babyctl apply</code> at pre-existing infrastructure to bring it under control without painful Terraform imports.</li>
-<li><strong>Unified discovery</strong> – <code>babyctl api-resources</code> merges Kubernetes and Terraformer API discovery into one familiar list.</li>
-<li><strong>Multi-format fluency</strong> – switch between YAML, HCL, and JSON with a single flag when you need the view that makes sense.</li>
-<li><strong>Crisis-friendly editing</strong> – <code>babyctl edit</code> opens live infrastructure in your editor so you can perform surgical changes just like you would with kubectl.</li>
-<li><strong>Kubernetes ecosystem compatible</strong> – pipe the output of tools such as Kustomize straight into <code>babyctl</code> to reuse all of your favourite config machinery.</li>
+<li>kubectl installed</li>
+<li>babyctl built and installed</li>
+<li>Example API definitions installed at <code>~/.babyctl/apis</code></li>
 </ul>
-<h2 id="key-use-cases">Key use cases<a class="headerlink" href="#key-use-cases" title="Permanent link">&para;</a></h2>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Bring click-ops infrastructure under control</strong></li>
-<li>Inspect resources with <code>babyctl get</code>.</li>
-<li>Run <code>babyctl apply -f existing.yaml</code> to adopt them without juggling Terraform state imports.</li>
-<li><strong>Leverage Kubernetes tooling for Terraform resources</strong></li>
-<li><code>kustomize build overlays/prod | babyctl apply -f -</code> works against anything Terraformer can reach.</li>
-<li><strong>Emergency edits</strong></li>
-<li>When production is on fire, open the resource directly via <code>babyctl edit</code> and keep the lights on.</li>
-<li><strong>Format conversion</strong></li>
-<li>Convert back and forth with <code>babyctl convert -f terraform.tf -oyaml</code> or <code>-ohcl</code>.</li>
+<li>
+<p>Install the example API definitions:
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.babyctl
+cp<span class="w"> </span>-r<span class="w"> </span>examples/api-definitions/apis<span class="w"> </span>~/.babyctl/
+</code></pre></div></p>
+</li>
+<li>
+<p>Start the API server:
+<div class="highlight"><pre><span></span><code>babyctl<span class="w"> </span>api-server<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span>
+</code></pre></div></p>
+</li>
 </ol>
-<h2 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Install babyctl</span>
-make<span class="w"> </span>install
+<p>The server will start and listen on port 8080, serving API definitions from <code>~/.babyctl/apis</code>.</p>
+<h2 id="using-with-kubectl">Using with kubectl<a class="headerlink" href="#using-with-kubectl" title="Permanent link">&para;</a></h2>
+<h3 id="test-api-discovery">Test API Discovery<a class="headerlink" href="#test-api-discovery" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># List all API groups</span>
+kubectl<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080<span class="w"> </span>api-resources
 
-<span class="c1"># Discover available resources from kubectl and Terraformer</span>
-babyctl<span class="w"> </span>api-resources
-
-<span class="c1"># Apply configuration from stdin</span>
-kustomize<span class="w"> </span>build<span class="w"> </span>overlays/dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>babyctl<span class="w"> </span>apply<span class="w"> </span>-f-
-
-<span class="c1"># Convert Terraform to YAML</span>
-babyctl<span class="w"> </span>convert<span class="w"> </span>-f<span class="w"> </span>terraform.tf<span class="w"> </span>-oyaml
+<span class="c1"># List all API versions</span>
+kubectl<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080<span class="w"> </span>api-versions
 </code></pre></div>
-<p>See the <a href="getting-started/">Getting Started</a> guide for detailed setup steps.</p>
-<h2 id="supported-commands">Supported commands<a class="headerlink" href="#supported-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api-resources</code></td>
-<td>List API resources available via kubectl and Terraformer</td>
-</tr>
-<tr>
-<td><code>api-server</code></td>
-<td>Run a Kubernetes-compatible discovery server backed by babyctl definitions</td>
-</tr>
-<tr>
-<td><code>api-versions</code></td>
-<td>Show supported API versions</td>
-</tr>
-<tr>
-<td><code>apply</code></td>
-<td>Apply a declarative configuration to a live resource</td>
-</tr>
-<tr>
-<td><code>convert</code></td>
-<td>Translate files between HCL, YAML, and JSON</td>
-</tr>
-<tr>
-<td><code>delete</code></td>
-<td>Delete live resources</td>
-</tr>
-<tr>
-<td><code>diff</code></td>
-<td>Compare live resources against would-be applies</td>
-</tr>
-<tr>
-<td><code>edit</code></td>
-<td>Open a resource in <code>$EDITOR</code> and persist edits live</td>
-</tr>
-<tr>
-<td><code>explain</code></td>
-<td>Display documentation about a resource</td>
-</tr>
-<tr>
-<td><code>get</code></td>
-<td>Retrieve one or many resources</td>
-</tr>
-<tr>
-<td><code>version</code></td>
-<td>Print client and server versions</td>
-</tr>
-</tbody>
-</table>
-<p>For full flag details see the <a href="cli-reference/">CLI reference</a>.</p>
-<h2 id="release-automation">Release automation<a class="headerlink" href="#release-automation" title="Permanent link">&para;</a></h2>
-<p>babyctl uses GitHub Actions and <a href="https://github.com/googleapis/release-please">release-please</a> to cut releases automatically. Follow
-<a href="https://www.conventionalcommits.org/">Conventional Commits</a> so release-please can determine semantic versions and changelog entries.
-See the <a href="contributing/#release-workflow">contributing guide</a> for details.</p>
-<h2 id="learn-more">Learn more<a class="headerlink" href="#learn-more" title="Permanent link">&para;</a></h2>
+<h3 id="expected-output">Expected Output<a class="headerlink" href="#expected-output" title="Permanent link">&para;</a></h3>
+<p>When you run <code>kubectl --server=http://localhost:8080 api-resources</code>, you should see output similar to:</p>
+<div class="highlight"><pre><span></span><code>NAME                APIVERSION                          NAMESPACED   KIND
+deployments         apps/v1                             true         Deployment
+statefulsets        apps/v1                             true         StatefulSet
+daemonsets          apps/v1                             true         DaemonSet
+replicasets         apps/v1                             true         ReplicaSet
+repositories        terraformer.github/v0.8.30          false        Repository
+teams               terraformer.github/v0.8.30          false        Team
+members             terraformer.github/v0.8.30          false        Member
+organization        terraformer.github/v0.8.30          false        Organization
+instances           terraformer.aws/v0.8.30             false        Instance
+buckets             terraformer.aws/v0.8.30             false        Bucket
+vpcs                terraformer.aws/v0.8.30             false        VPC
+securitygroups      terraformer.aws/v0.8.30             false        SecurityGroup
+</code></pre></div>
+<h2 id="testing-with-curl">Testing with curl<a class="headerlink" href="#testing-with-curl" title="Permanent link">&para;</a></h2>
+<p>You can also test the API directly with curl:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Get core API</span>
+curl<span class="w"> </span>http://localhost:8080/api
+
+<span class="c1"># Get all API groups</span>
+curl<span class="w"> </span>http://localhost:8080/apis
+
+<span class="c1"># Get resources in a specific group/version</span>
+curl<span class="w"> </span>http://localhost:8080/apis/apps/v1
+curl<span class="w"> </span>http://localhost:8080/apis/terraformer.github/v0.8.30
+</code></pre></div>
+<h2 id="creating-custom-api-definitions">Creating Custom API Definitions<a class="headerlink" href="#creating-custom-api-definitions" title="Permanent link">&para;</a></h2>
+<p>You can create your own API definitions by adding YAML files to <code>~/.babyctl/apis</code>:</p>
+<ol>
+<li>
+<p>Create a directory structure:
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.babyctl/apis/mygroup/v1
+</code></pre></div></p>
+</li>
+<li>
+<p>Create a <code>resources.yaml</code> file:
+<div class="highlight"><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">APIResourceList</span>
+<span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">groupVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mygroup/v1</span>
+<span class="nt">resources</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myresources</span>
+<span class="w">    </span><span class="nt">singularName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myresource</span>
+<span class="w">    </span><span class="nt">namespaced</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MyResource</span>
+<span class="w">    </span><span class="nt">verbs</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">get</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">list</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">create</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">update</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">delete</span>
+<span class="w">    </span><span class="nt">shortNames</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mr</span>
+<span class="w">    </span><span class="nt">categories</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">all</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Restart the API server to pick up the new definition</p>
+</li>
+<li>
+<p>Test with kubectl:
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080<span class="w"> </span>api-resources<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>myresources
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="using-babyctl-commands">Using babyctl Commands<a class="headerlink" href="#using-babyctl-commands" title="Permanent link">&para;</a></h2>
+<p>You can also use babyctl commands while pointing at the API server:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Note: This will use the API server endpoints for discovery</span>
+babyctl<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080<span class="w"> </span>api-resources
+babyctl<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080<span class="w"> </span>api-versions
+</code></pre></div>
+<h2 id="integration-with-kubeconfig">Integration with kubeconfig<a class="headerlink" href="#integration-with-kubeconfig" title="Permanent link">&para;</a></h2>
+<p>For easier use, you can add the API server to your kubeconfig:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>config<span class="w"> </span>set-cluster<span class="w"> </span>babyctl-api<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080
+kubectl<span class="w"> </span>config<span class="w"> </span>set-context<span class="w"> </span>babyctl-api<span class="w"> </span>--cluster<span class="o">=</span>babyctl-api
+kubectl<span class="w"> </span>config<span class="w"> </span>use-context<span class="w"> </span>babyctl-api
+</code></pre></div>
+<p>Then you can use kubectl without specifying the server each time:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>api-resources
+kubectl<span class="w"> </span>api-versions
+</code></pre></div>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="getting-started/">Getting started</a></li>
-<li><a href="workflows/">Common workflows</a></li>
-<li><a href="kubectl-integration/">Kubectl integration</a></li>
-<li><a href="architecture/">Architecture deep dive</a></li>
-<li><a href="development/">Development workflow</a></li>
+<li>The API server only implements the discovery endpoints (GET /api, GET /apis, GET /apis/<group>/<version>)</li>
+<li>It does not handle actual resource CRUD operations (get, create, update, delete)</li>
+<li>This is designed for API discovery and metadata purposes, not for managing actual resources</li>
+<li>For resource management, continue to use kubectl against a real Kubernetes cluster or babyctl for terraform resources</li>
 </ul>
 
 
@@ -1043,9 +1109,6 @@ See the <a href="contributing/#release-workflow">contributing guide</a> for deta
 
 
 
-
-  
-  
 
 
 
@@ -1095,10 +1158,10 @@ See the <a href="contributing/#release-workflow">contributing guide</a> for deta
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "toc.integrate", "content.code.copy", "content.action.edit", "content.tooltips"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "toc.integrate", "content.code.copy", "content.action.edit", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>

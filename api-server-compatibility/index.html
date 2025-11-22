@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../cli-reference/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../reference/">
+        <link rel="next" href="../development/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Common Workflows - babyctl Docs</title>
+        <title>API Server Compatibility - babyctl Docs</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#common-workflows" class="md-skip">
+        <a href="#api-server-compatibility-checklist" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common Workflows
+              API Server Compatibility
             
           </span>
         </div>
@@ -245,12 +245,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../cli-reference/" class="md-tabs__link">
           
   
@@ -313,10 +311,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../architecture/" class="md-tabs__link">
           
   
@@ -458,10 +458,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -473,22 +471,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -506,7 +501,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -549,37 +544,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Common Workflows
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../workflows/" class="md-nav__link">
         
   
   
@@ -595,92 +563,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bring-existing-infrastructure-under-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bring existing infrastructure under control
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manage-everything-through-overlays" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Manage everything through overlays
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#emergency-edits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Emergency edits
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#convert-formats-for-hybrid-teams" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Convert formats for hybrid teams
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expose-discovery-data-to-kubectl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Expose discovery data to kubectl
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automate-with-cicd" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automate with CI/CD
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -952,8 +834,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -965,19 +849,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -995,7 +882,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1038,10 +925,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../api-server-compatibility/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Server Compatibility
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1057,6 +971,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-server-already-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the server already does
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gaps-to-close-for-kubectl-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps to close for kubectl compatibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1207,7 +1163,7 @@
 
 
   
-    <a href="https://github.com/m0un10/babyctl/edit/main/workflows.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/m0un10/babyctl/edit/main/api-server-compatibility.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1215,67 +1171,83 @@
   
 
 
-<h1 id="common-workflows">Common workflows<a class="headerlink" href="#common-workflows" title="Permanent link">&para;</a></h1>
-<p>Use these recipes to weave babyctl into your day-to-day operations.</p>
-<h2 id="bring-existing-infrastructure-under-control">Bring existing infrastructure under control<a class="headerlink" href="#bring-existing-infrastructure-under-control" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Export the current definition using whatever tooling is available (Terraform state, cloud console export, etc.).</li>
-<li>Convert it to YAML if needed:
-   <div class="highlight"><pre><span></span><code>babyctl<span class="w"> </span>convert<span class="w"> </span>-f<span class="w"> </span>terraform.tfstate<span class="w"> </span>-oyaml<span class="w"> </span>&gt;<span class="w"> </span>imported.yaml
-</code></pre></div></li>
-<li>Review the manifest, trim any drift you want babyctl to own, and run:
-   <div class="highlight"><pre><span></span><code>babyctl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>imported.yaml
-</code></pre></div></li>
-<li>Repeat with <code>babyctl diff</code> until the declarative state matches reality.</li>
-</ol>
-<h2 id="manage-everything-through-overlays">Manage everything through overlays<a class="headerlink" href="#manage-everything-through-overlays" title="Permanent link">&para;</a></h2>
-<p>Use your existing Kustomize/Helm/ytt pipelines and pipe the rendered output into babyctl:</p>
-<div class="highlight"><pre><span></span><code>kustomize<span class="w"> </span>build<span class="w"> </span>overlays/prod<span class="w"> </span><span class="p">|</span><span class="w"> </span>babyctl<span class="w"> </span>apply<span class="w"> </span>-f-
-</code></pre></div>
-<p>Pair <code>babyctl diff -f-</code> with the same pipeline to preview changes in CI before you deploy.</p>
-<h2 id="emergency-edits">Emergency edits<a class="headerlink" href="#emergency-edits" title="Permanent link">&para;</a></h2>
-<p>When latency matters more than automation:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">BABYCTL_EDITOR</span><span class="o">=</span><span class="s2">&quot;vim&quot;</span><span class="w"> </span>babyctl<span class="w"> </span>edit<span class="w"> </span>--path<span class="w"> </span>examples/api-definitions/apis<span class="w"> </span>widget<span class="w"> </span>cli-demo
-</code></pre></div>
-<p>babyctl downloads the resource, opens <code>$BABYCTL_EDITOR</code> (falling back through <code>$KUBE_EDITOR</code>, <code>$VISUAL</code>, <code>$EDITOR</code>, and finally <code>vi</code>), and applies the diff. Use <code>babyctl get &lt;resource&gt; -oyaml</code> afterwards to confirm
-that the update landed as expected. The initial implementation focuses on the bundled <code>babyctl.dev/v1alpha1</code> <code>Widget</code> resource when you run against the local API definitions.</p>
-<h2 id="convert-formats-for-hybrid-teams">Convert formats for hybrid teams<a class="headerlink" href="#convert-formats-for-hybrid-teams" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># HCL -&gt; YAML</span>
-babyctl<span class="w"> </span>convert<span class="w"> </span>-f<span class="w"> </span>terraform.tf<span class="w"> </span>-oyaml<span class="w"> </span>&gt;<span class="w"> </span>infra.yaml
-
-<span class="c1"># YAML -&gt; HCL</span>
-babyctl<span class="w"> </span>convert<span class="w"> </span>-f<span class="w"> </span>infra.yaml<span class="w"> </span>-ohcl<span class="w"> </span>&gt;<span class="w"> </span>terraform.tf
-</code></pre></div>
-<p>This enables GitOps teams that prefer YAML while still producing Terraform-friendly configuration.</p>
-<h2 id="expose-discovery-data-to-kubectl">Expose discovery data to kubectl<a class="headerlink" href="#expose-discovery-data-to-kubectl" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Install the sample API definitions under <code>~/.babyctl/apis</code> as described in the <a href="../getting-started/#bootstrapping-discovery-data">getting started guide</a>.</li>
-<li>Start the discovery server:
-   <div class="highlight"><pre><span></span><code>babyctl<span class="w"> </span>api-server<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span>
-</code></pre></div></li>
-<li>Point kubectl at it:
-   <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>config<span class="w"> </span>set-cluster<span class="w"> </span>babyctl-api<span class="w"> </span>--server<span class="o">=</span>http://localhost:8080
-kubectl<span class="w"> </span>config<span class="w"> </span>set-context<span class="w"> </span>babyctl-api<span class="w"> </span>--cluster<span class="o">=</span>babyctl-api
-kubectl<span class="w"> </span>config<span class="w"> </span>use-context<span class="w"> </span>babyctl-api
-kubectl<span class="w"> </span>api-resources
-</code></pre></div></li>
-</ol>
-<p>See the <a href="../kubectl-integration/">kubectl integration guide</a> for more detail.</p>
-<h2 id="automate-with-cicd">Automate with CI/CD<a class="headerlink" href="#automate-with-cicd" title="Permanent link">&para;</a></h2>
+<h1 id="api-server-compatibility-checklist">API Server Compatibility Checklist<a class="headerlink" href="#api-server-compatibility-checklist" title="Permanent link">&para;</a></h1>
+<p>This document outlines what the current <code>babyctl api-server</code> already exposes and what still needs to be implemented before kubectl can treat it like a general-purpose Kubernetes API server.</p>
+<h2 id="what-the-server-already-does">What the server already does<a class="headerlink" href="#what-the-server-already-does" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Run <code>babyctl diff</code> in pull requests to show proposed infrastructure changes.</li>
-<li>Use <code>babyctl apply</code> in a controlled environment (e.g. GitHub Actions job) once changes are approved.</li>
-<li>Leverage the <a href="../contributing/#release-workflow">release automation</a> to ship binaries for consumers.</li>
+<li><strong>Discovery endpoints plus sample CRUD</strong> – the HTTP router in <code>pkg/apiserver/server.go</code> wires up handlers for <code>GET /api</code>, <code>GET /apis</code>, and <code>GET /apis/&lt;group&gt;/&lt;version&gt;</code> plus two <code>babyctl</code>-specific helper routes for resource definitions and controllers. Cluster-scoped CRUD endpoints are now registered for any resource that exposes a REST controller (the bundled <code>babyctl.dev/v1alpha1/widgets</code> definition exercises <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>).</li>
+<li><strong>File-backed resource metadata</strong> – API groups, versions, and resource lists are read from YAML files under <code>~/.babyctl/apis</code> (or <code>--api-path</code>) via the loader. This keeps discovery data in sync with whatever definitions you install locally.</li>
+<li><strong>In-memory cache</strong> – the server preloads API resources at startup and filters out empty groups so kubectl’s discovery calls only see definitions that also have controller implementations.</li>
 </ul>
+<p>These capabilities are sufficient for <code>kubectl api-resources</code> / <code>api-versions</code>, but kubectl requires more when you attempt <code>get</code>, <code>apply</code>, or other resource verbs.</p>
+<h2 id="gaps-to-close-for-kubectl-compatibility">Gaps to close for kubectl compatibility<a class="headerlink" href="#gaps-to-close-for-kubectl-compatibility" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Resource endpoints for each verb</strong></li>
+<li>Cluster-scoped CRUD handlers exist for resources that include a REST controller (see the widgets sample), but namespaced URLs, collection deletes, and patch verbs are not implemented yet.</li>
+<li>The handlers must support namespaced URLs, subresources such as <code>/status</code>, and JSON Patch/Merge Patch (<code>PATCH</code> with the proper <code>Content-Type</code>).</li>
+<li>
+<p>Until these semantics are added kubectl will still fail when targeting built-in resources such as <code>deployments</code>.</p>
+</li>
+<li>
+<p><strong>List/watch semantics</strong>  </p>
+</li>
+<li><code>kubectl get</code> and the informer cache expect <code>list</code> plus <code>watch</code> verbs to stream events. Implement chunking, <code>resourceVersion</code>, <code>continue</code>, <code>labelSelector</code>, and <code>fieldSelector</code> query parameters so clients can paginate or resume watches.  </li>
+<li>
+<p>Watches require HTTP streaming with the Kubernetes watch event envelope (<code>{"type":"ADDED","object":...}</code>).</p>
+</li>
+<li>
+<p><strong>Object schemas and metadata</strong>  </p>
+</li>
+<li>Responses need Kubernetes-style metadata fields (<code>apiVersion</code>, <code>kind</code>, <code>metadata.{name,namespace,uid,resourceVersion}</code>) for every resource.  </li>
+<li>
+<p>Consider generating OpenAPI (<code>/openapi/v2</code> or <code>/openapi/v3</code>) so kubectl can validate manifests.</p>
+</li>
+<li>
+<p><strong>Status and scale subresources</strong>  </p>
+</li>
+<li>Many built-in commands (<code>kubectl rollout status</code>, <code>kubectl scale</code>) rely on <code>/status</code> and <code>/scale</code>.  </li>
+<li>
+<p>Expose separate handlers that delegate to the underlying <code>resourceconfig.Controller</code> implementations or return “method not allowed” unless the definition explicitly supports them.</p>
+</li>
+<li>
+<p><strong>Error handling and admission-style validation</strong>  </p>
+</li>
+<li>Use Kubernetes API status responses (<code>Status</code> objects with <code>status</code>, <code>reason</code>, <code>message</code>, <code>code</code>).  </li>
+<li>
+<p>Validate request bodies and enforce optimistic concurrency via <code>metadata.resourceVersion</code> to match kubectl expectations for <code>update</code>/<code>patch</code>.</p>
+</li>
+<li>
+<p><strong>Authentication, authorization, and TLS</strong>  </p>
+</li>
+<li>
+<p>Real kubectl clients default to HTTPS with certificate verification. Add TLS flags (cert/key/CA) and optionally webhook-style authn/authz to avoid having to invoke <code>kubectl --server=http://... --insecure-skip-tls-verify</code>.</p>
+</li>
+<li>
+<p><strong>Miscellaneous Kubernetes endpoints</strong>  </p>
+</li>
+<li>Implement <code>/version</code>, <code>/readyz</code>, <code>/healthz</code>, and <code>/livez</code> so kubectl and tooling can perform health checks.  </li>
+<li>
+<p>Consider supporting <code>/.well-known/openid-configuration</code> if you later add token auth, because kubectl will call it when OIDC data is referenced in kubeconfig contexts.</p>
+</li>
+<li>
+<p><strong>Dynamic reloading or informer refresh</strong>  </p>
+</li>
+<li>
+<p>Today the loader only reads definitions at startup. Add file watchers or an admin endpoint to reload definitions so cluster admins don’t have to restart the server when installing new APIs.</p>
+</li>
+<li>
+<p><strong>Multi-user reliability</strong>  </p>
+</li>
+<li>Add request logging, structured errors, and rate limiting.  </li>
+<li>Provide consistent concurrency guarantees for controllers so concurrent kubectl operations do not corrupt backing systems.</li>
+</ol>
+<p>Addressing the points above will move the server from “discovery-only shim” to something kubectl can treat like a full API server.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
